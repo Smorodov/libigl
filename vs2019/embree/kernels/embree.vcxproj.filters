@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\device.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\stat.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\acceln.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\accelset.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\state.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\rtcore.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\rtcore_builder.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\alloc.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\geometry.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_user_geometry.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_instance.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_triangle_mesh.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_quad_mesh.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_curves.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_line_segments.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_grid_mesh.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_points.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\bezier_curve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\bspline_curve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\geometry\primitive4.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\geometry\instance_intersector.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\geometry\curve_intersector_virtual.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\builders\primrefgen.cpp">
+      <Filter>Source Files\builders</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_statistics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh4_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh8_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_rotate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_refit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_hair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_hair_mb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_morton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_sah.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_sah_spatial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_sah_mb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_twolevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_intersector1_bvh4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_subdiv_mesh.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\tessellation_cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\subdivpatch1base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\catmullclark_coefficients.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\geometry\grid_soa.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\subdivpatch1base_eval.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_subdiv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_intersector_stream_bvh4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_intersector_stream_filters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_for.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_reduce.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_prefix_sum.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_for_for.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_for_for_prefix_sum.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_partition.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_sort.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_set.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_map.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_filter.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\embree.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{53800865-D82D-31C6-8B5D-67ABEA406BB2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{21B6F6BE-5CBE-3551-A509-9D89AB315BF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\builders">
+      <UniqueIdentifier>{DB010F73-628B-35A2-934E-ED13E13EED8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{957540DE-F7DB-36FA-9B5B-314C02825C6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\geometry">
+      <UniqueIdentifier>{FA70CE54-04CA-38D2-932C-9F4895CF67C4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CEE0BBF7-C63B-3DC3-B6FE-FBBE9D4BB1DB}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>305_QuadraticProgramming_bin</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">305_QuadraticProgramming_bin.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">305_QuadraticProgramming_bin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">305_QuadraticProgramming_bin.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">305_QuadraticProgramming_bin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">305_QuadraticProgramming_bin.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">305_QuadraticProgramming_bin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;IGL_STATIC_LIBRARY;NOMINMAX;TUTORIAL_SHARED_PATH="F:/Documents/Visual Studio 2019/projects/libigl/cmake/../external/../tutorial/data";CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;IGL_STATIC_LIBRARY;NOMINMAX;TUTORIAL_SHARED_PATH=\"F:/Documents/Visual Studio 2019/projects/libigl/cmake/../external/../tutorial/data\";CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Debug\igl.lib;..\..\Debug\igl_opengl.lib;..\..\Debug\igl_opengl_glfw.lib;..\..\Debug\igl_opengl.lib;..\..\Debug\igl.lib;opengl32.lib;..\..\Debug\glad.lib;..\..\Debug\glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Documents/Visual Studio 2019/projects/libigl/vs2019/Debug/305_QuadraticProgramming_bin.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Documents/Visual Studio 2019/projects/libigl/vs2019/305_QuadraticProgramming_bin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_STATIC_LIBRARY;NOMINMAX;TUTORIAL_SHARED_PATH="F:/Documents/Visual Studio 2019/projects/libigl/cmake/../external/../tutorial/data";CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_STATIC_LIBRARY;NOMINMAX;TUTORIAL_SHARED_PATH=\"F:/Documents/Visual Studio 2019/projects/libigl/cmake/../external/../tutorial/data\";CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Release\igl.lib;..\..\Release\igl_opengl.lib;..\..\Release\igl_opengl_glfw.lib;..\..\Release\igl_opengl.lib;..\..\Release\igl.lib;opengl32.lib;..\..\Release\glad.lib;..\..\Release\glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Documents/Visual Studio 2019/projects/libigl/vs2019/Release/305_QuadraticProgramming_bin.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Documents/Visual Studio 2019/projects/libigl/vs2019/305_QuadraticProgramming_bin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_STATIC_LIBRARY;NOMINMAX;TUTORIAL_SHARED_PATH="F:/Documents/Visual Studio 2019/projects/libigl/cmake/../external/../tutorial/data";CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_STATIC_LIBRARY;NOMINMAX;TUTORIAL_SHARED_PATH=\"F:/Documents/Visual Studio 2019/projects/libigl/cmake/../external/../tutorial/data\";CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\RelWithDebInfo\igl.lib;..\..\RelWithDebInfo\igl_opengl.lib;..\..\RelWithDebInfo\igl_opengl_glfw.lib;..\..\RelWithDebInfo\igl_opengl.lib;..\..\RelWithDebInfo\igl.lib;opengl32.lib;..\..\RelWithDebInfo\glad.lib;..\..\RelWithDebInfo\glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Documents/Visual Studio 2019/projects/libigl/vs2019/RelWithDebInfo/305_QuadraticProgramming_bin.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Documents/Visual Studio 2019/projects/libigl/vs2019/RelWithDebInfo/305_QuadraticProgramming_bin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Documents\Visual Studio 2019\projects\libigl\tutorial\305_QuadraticProgramming\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/tutorial/305_QuadraticProgramming/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/tutorial/305_QuadraticProgramming/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\305_QuadraticProgramming\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/tutorial/305_QuadraticProgramming/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/tutorial/305_QuadraticProgramming/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\305_QuadraticProgramming\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/tutorial/305_QuadraticProgramming/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/tutorial/305_QuadraticProgramming/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\305_QuadraticProgramming\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\tutorial\305_QuadraticProgramming\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\ZERO_CHECK.vcxproj">
+      <Project>{9AB75CD3-03E8-3A49-ACBF-46BDEEEB0D3B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glad\glad.vcxproj">
+      <Project>{356805F1-6EFA-329F-80AE-D0A6F484F460}</Project>
+      <Name>glad</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src\glfw.vcxproj">
+      <Project>{83399B87-357A-3041-B56B-85AC1946491E}</Project>
+      <Name>glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\igl.vcxproj">
+      <Project>{1ACAEF2A-8284-3C8F-BBE5-537E35006E6A}</Project>
+      <Name>igl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\igl_opengl.vcxproj">
+      <Project>{CBE0782D-D1E9-3374-9238-672404C0CF3C}</Project>
+      <Name>igl_opengl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\igl_opengl_glfw.vcxproj">
+      <Project>{34775FB7-A5CB-3005-AC3A-D6C45947830A}</Project>
+      <Name>igl_opengl_glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

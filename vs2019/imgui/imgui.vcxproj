@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{42E5F973-F7BD-33F5-8E85-7467A593D778}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>imgui</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">imgui.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">imgui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">imgui.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">imgui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">imgui.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">imgui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\.;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui\examples;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;IMGUI_IMPL_OPENGL_LOADER_GLAD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;IMGUI_IMPL_OPENGL_LOADER_GLAD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\.;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui\examples;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\.;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui\examples;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\.;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui\examples;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\.;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui\examples;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\.;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui\examples;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\.;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui\examples;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IMGUI_IMPL_OPENGL_LOADER_GLAD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\.;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui\examples;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\.;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..;F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\..\imgui\examples;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Documents\Visual Studio 2019\projects\libigl\external\libigl-imgui\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/external/libigl-imgui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/imgui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\imgui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/external/libigl-imgui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/imgui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\imgui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/external/libigl-imgui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/imgui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\imgui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\imgui\imgui.cpp" />
+    <ClInclude Include="F:\Documents\Visual Studio 2019\projects\libigl\external\imgui\imgui.h" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\imgui\imgui_demo.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\imgui\imgui_draw.cpp" />
+    <ClInclude Include="F:\Documents\Visual Studio 2019\projects\libigl\external\imgui\imgui_internal.h" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\imgui\imgui_widgets.cpp" />
+    <ClInclude Include="F:\Documents\Visual Studio 2019\projects\libigl\external\imgui\imstb_rectpack.h" />
+    <ClInclude Include="F:\Documents\Visual Studio 2019\projects\libigl\external\imgui\imstb_textedit.h" />
+    <ClInclude Include="F:\Documents\Visual Studio 2019\projects\libigl\external\imgui\imstb_truetype.h" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\imgui\examples\imgui_impl_glfw.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\imgui\examples\imgui_impl_opengl3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\ZERO_CHECK.vcxproj">
+      <Project>{9AB75CD3-03E8-3A49-ACBF-46BDEEEB0D3B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glad\glad.vcxproj">
+      <Project>{356805F1-6EFA-329F-80AE-D0A6F484F460}</Project>
+      <Name>glad</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src\glfw.vcxproj">
+      <Project>{83399B87-357A-3041-B56B-85AC1946491E}</Project>
+      <Name>glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

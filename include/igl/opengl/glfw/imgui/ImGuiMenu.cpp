@@ -385,19 +385,34 @@ IGL_INLINE void ImGuiMenu::draw_text(
   const Eigen::Vector4f color)
 {
   pos += normal * 0.005f * viewer->core().object_scale;
+
+  int width, height;
+  glfwGetFramebufferSize(viewer->window, &width, &height);
+
+  float dx=viewer->core().viewport[0];
+  float dy=height-viewer->core().viewport[1];
+
+  viewer->core().viewport[0] = 0;
+  viewer->core().viewport[1] = 0;
   Eigen::Vector3f coord = igl::project(Eigen::Vector3f(pos.cast<float>()),
     viewer->core().view, viewer->core().proj, viewer->core().viewport);
 
   // Draw text labels slightly bigger than normal text
   ImDrawList* drawList = ImGui::GetWindowDrawList();
+  
+  float wh=ImGui::GetWindowHeight();
+  
   drawList->AddText(ImGui::GetFont(), ImGui::GetFontSize() * 1.2,
-      ImVec2(coord[0]/pixel_ratio_, (viewer->core().viewport[3] - coord[1])/pixel_ratio_),
+      ImVec2((dx+coord[0])/pixel_ratio_,  (dy - coord[1])/pixel_ratio_),
       ImGui::GetColorU32(ImVec4(
         color(0),
         color(1),
         color(2),
         color(3))),
       &text[0], &text[0] + text.size());
+
+  viewer->core().viewport[0] = dx;
+  viewer->core().viewport[1] = height-dy;
 }
 
 IGL_INLINE float ImGuiMenu::pixel_ratio()

@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{92D3DF73-B27C-33F4-90C0-3B1B0637444A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Documents\Visual Studio 2019\projects\libigl\tutorial\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/tutorial/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/tutorial/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseArguments.cmake;F:\Documents\Visual Studio 2019\projects\libigl\cmake\DownloadProject.CMakeLists.cmake.in;F:\Documents\Visual Studio 2019\projects\libigl\cmake\DownloadProject.cmake;F:\Documents\Visual Studio 2019\projects\libigl\cmake\LibiglDownloadExternal.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/tutorial/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/tutorial/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseArguments.cmake;F:\Documents\Visual Studio 2019\projects\libigl\cmake\DownloadProject.CMakeLists.cmake.in;F:\Documents\Visual Studio 2019\projects\libigl\cmake\DownloadProject.cmake;F:\Documents\Visual Studio 2019\projects\libigl\cmake\LibiglDownloadExternal.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/tutorial/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/tutorial/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeParseArguments.cmake;F:\Documents\Visual Studio 2019\projects\libigl\cmake\DownloadProject.CMakeLists.cmake.in;F:\Documents\Visual Studio 2019\projects\libigl\cmake\DownloadProject.cmake;F:\Documents\Visual Studio 2019\projects\libigl\cmake\LibiglDownloadExternal.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\ZERO_CHECK.vcxproj">
+      <Project>{9AB75CD3-03E8-3A49-ACBF-46BDEEEB0D3B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\101_FileIO\101_FileIO_bin.vcxproj">
+      <Project>{DCD0E0A0-BA00-35B7-BB6E-66E0C7C43075}</Project>
+      <Name>101_FileIO_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\102_DrawMesh\102_DrawMesh_bin.vcxproj">
+      <Project>{D83C1EDA-8635-3BFD-A161-202B838F5AF0}</Project>
+      <Name>102_DrawMesh_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\103_Events\103_Events_bin.vcxproj">
+      <Project>{E6386E10-DF25-3D20-9BC9-B3F453218831}</Project>
+      <Name>103_Events_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\104_Colors\104_Colors_bin.vcxproj">
+      <Project>{4AB4DAC4-178F-3DDC-9620-03D7C06DD665}</Project>
+      <Name>104_Colors_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\105_Overlays\105_Overlays_bin.vcxproj">
+      <Project>{7A5DEB87-705A-334E-865F-91C187C44095}</Project>
+      <Name>105_Overlays_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\106_ViewerMenu\106_ViewerMenu_bin.vcxproj">
+      <Project>{1EF433D8-3104-35A4-8FB3-7DD019EA925C}</Project>
+      <Name>106_ViewerMenu_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\107_MultipleMeshes\107_MultipleMeshes_bin.vcxproj">
+      <Project>{4DC4C137-290A-33FF-9EA0-9070BDBEC9AD}</Project>
+      <Name>107_MultipleMeshes_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\108_MultipleViews\108_MultipleViews_bin.vcxproj">
+      <Project>{AEBD96D7-AE3A-340E-ABAE-D619C659FFC5}</Project>
+      <Name>108_MultipleViews_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\201_Normals\201_Normals_bin.vcxproj">
+      <Project>{97A5D562-96A2-367F-901C-3B6CD03BC403}</Project>
+      <Name>201_Normals_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\202_GaussianCurvature\202_GaussianCurvature_bin.vcxproj">
+      <Project>{572F0063-8D16-3010-800C-7559FE78F161}</Project>
+      <Name>202_GaussianCurvature_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\203_CurvatureDirections\203_CurvatureDirections_bin.vcxproj">
+      <Project>{02AD6CAA-42FA-33CC-B25E-3128CAC9F897}</Project>
+      <Name>203_CurvatureDirections_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\204_Gradient\204_Gradient_bin.vcxproj">
+      <Project>{7A17F525-829B-3894-BC53-2358D2511BE9}</Project>
+      <Name>204_Gradient_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\205_Laplacian\205_Laplacian_bin.vcxproj">
+      <Project>{277033A5-6CCE-3162-914F-FDDF010ED34F}</Project>
+      <Name>205_Laplacian_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\206_GeodesicDistance\206_GeodesicDistance_bin.vcxproj">
+      <Project>{AE65439D-E87F-3DD1-830B-A3C09E6853CD}</Project>
+      <Name>206_GeodesicDistance_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\301_Slice\301_Slice_bin.vcxproj">
+      <Project>{4F0F6983-9855-39C5-8CC6-C3932B7B024C}</Project>
+      <Name>301_Slice_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\302_Sort\302_Sort_bin.vcxproj">
+      <Project>{73230DC0-9353-3C41-AAF0-CF755268C50D}</Project>
+      <Name>302_Sort_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\303_LaplaceEquation\303_LaplaceEquation_bin.vcxproj">
+      <Project>{39F82816-F592-385A-A968-C7621C206F0D}</Project>
+      <Name>303_LaplaceEquation_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\304_LinearEqualityConstraints\304_LinearEqualityConstraints_bin.vcxproj">
+      <Project>{18F800D0-C273-3DE9-A821-012C2C61B565}</Project>
+      <Name>304_LinearEqualityConstraints_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\305_QuadraticProgramming\305_QuadraticProgramming_bin.vcxproj">
+      <Project>{CEE0BBF7-C63B-3DC3-B6FE-FBBE9D4BB1DB}</Project>
+      <Name>305_QuadraticProgramming_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\306_EigenDecomposition\306_EigenDecomposition_bin.vcxproj">
+      <Project>{CB2BA96B-FABD-3B14-89A9-D6EE392059A2}</Project>
+      <Name>306_EigenDecomposition_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\401_BiharmonicDeformation\401_BiharmonicDeformation_bin.vcxproj">
+      <Project>{AC858188-E8DA-3477-9E0A-CC5232CF2ACC}</Project>
+      <Name>401_BiharmonicDeformation_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\402_PolyharmonicDeformation\402_PolyharmonicDeformation_bin.vcxproj">
+      <Project>{B616E4C7-8E5A-3EE5-BA3E-FCB92BFD0164}</Project>
+      <Name>402_PolyharmonicDeformation_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\403_BoundedBiharmonicWeights\403_BoundedBiharmonicWeights_bin.vcxproj">
+      <Project>{20DAF109-B4CA-3ABA-9CFB-917508F2A095}</Project>
+      <Name>403_BoundedBiharmonicWeights_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\404_DualQuaternionSkinning\404_DualQuaternionSkinning_bin.vcxproj">
+      <Project>{49A5A13C-062E-388E-89E7-5939B29911A6}</Project>
+      <Name>404_DualQuaternionSkinning_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\405_AsRigidAsPossible\405_AsRigidAsPossible_bin.vcxproj">
+      <Project>{BCFDE567-B44F-384A-AFEA-EF139959172D}</Project>
+      <Name>405_AsRigidAsPossible_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\406_FastAutomaticSkinningTransformations\406_FastAutomaticSkinningTransformations_bin.vcxproj">
+      <Project>{9768FA49-4D1A-33AF-A76B-E63410092937}</Project>
+      <Name>406_FastAutomaticSkinningTransformations_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\407_BiharmonicCoordinates\407_BiharmonicCoordinates_bin.vcxproj">
+      <Project>{36F5D043-F316-3E66-9184-CD662EBA7E2D}</Project>
+      <Name>407_BiharmonicCoordinates_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\501_HarmonicParam\501_HarmonicParam_bin.vcxproj">
+      <Project>{10C1EC8D-8BB7-3278-AEC7-DE82B64B466F}</Project>
+      <Name>501_HarmonicParam_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\502_LSCMParam\502_LSCMParam_bin.vcxproj">
+      <Project>{F6D0C7B4-5AF3-34C0-B061-746F7F80391F}</Project>
+      <Name>502_LSCMParam_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\503_ARAPParam\503_ARAPParam_bin.vcxproj">
+      <Project>{B3983C3C-472B-3D2D-B2E0-8A0D4E189DD0}</Project>
+      <Name>503_ARAPParam_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\504_NRosyDesign\504_NRosyDesign_bin.vcxproj">
+      <Project>{A03C633E-3C35-33AD-A24E-AA089B52E338}</Project>
+      <Name>504_NRosyDesign_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\505_MIQ\505_MIQ_bin.vcxproj">
+      <Project>{6B07B023-EA78-3A87-A26E-9023F6E9C236}</Project>
+      <Name>505_MIQ_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\506_FrameField\506_FrameField_bin.vcxproj">
+      <Project>{D7E15857-AD71-3B34-A9E5-3BE888233621}</Project>
+      <Name>506_FrameField_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\507_Planarization\507_Planarization_bin.vcxproj">
+      <Project>{638B9349-1EE0-3F20-8113-CF4D2CBB4ED4}</Project>
+      <Name>507_Planarization_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\601_Serialization\601_Serialization_bin.vcxproj">
+      <Project>{AF7041EA-0C58-3024-84AA-16B2CC1DB489}</Project>
+      <Name>601_Serialization_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\604_Triangle\604_Triangle_bin.vcxproj">
+      <Project>{17ECFA8C-1B62-3B5F-A4EA-4ABFC0AAEF1F}</Project>
+      <Name>604_Triangle_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\605_Tetgen\605_Tetgen_bin.vcxproj">
+      <Project>{C70F1912-6285-320A-9C01-E5B20723CC74}</Project>
+      <Name>605_Tetgen_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\606_AmbientOcclusion\606_AmbientOcclusion_bin.vcxproj">
+      <Project>{BFB576ED-7D8F-33BB-BD75-81D3819266E5}</Project>
+      <Name>606_AmbientOcclusion_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\607_ScreenCapture\607_ScreenCapture_bin.vcxproj">
+      <Project>{D7573CB1-A118-3F31-A0B4-168CE3F3CA5C}</Project>
+      <Name>607_ScreenCapture_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\701_Statistics\701_Statistics_bin.vcxproj">
+      <Project>{CF60DC46-CD86-3989-9058-1EB449E44E60}</Project>
+      <Name>701_Statistics_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\702_WindingNumber\702_WindingNumber_bin.vcxproj">
+      <Project>{7CB45B5C-A72D-34BD-B7FA-16FB3185A7A8}</Project>
+      <Name>702_WindingNumber_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\703_Decimation\703_Decimation_bin.vcxproj">
+      <Project>{8F8A3719-EE51-39A0-8099-859967748AF8}</Project>
+      <Name>703_Decimation_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\704_SignedDistance\704_SignedDistance_bin.vcxproj">
+      <Project>{4D7B0528-ED06-3C3D-A468-5BB9DFDF8030}</Project>
+      <Name>704_SignedDistance_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\705_MarchingCubes\705_MarchingCubes_bin.vcxproj">
+      <Project>{3E49E286-2240-3247-90B7-4D9F2C69A534}</Project>
+      <Name>705_MarchingCubes_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\706_FacetOrientation\706_FacetOrientation_bin.vcxproj">
+      <Project>{71441EB9-4FF4-3C64-BD41-94589DDDC53E}</Project>
+      <Name>706_FacetOrientation_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\707_SweptVolume\707_SweptVolume_bin.vcxproj">
+      <Project>{7A2843A8-0C38-3D05-B048-078A8BF00926}</Project>
+      <Name>707_SweptVolume_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\708_Picking\708_Picking_bin.vcxproj">
+      <Project>{C9FEBA69-1B4B-3B35-9E11-14361D9707E4}</Project>
+      <Name>708_Picking_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\709_SLIM\709_SLIM_bin.vcxproj">
+      <Project>{B6A929CE-666D-325B-84AF-F04DC487ED26}</Project>
+      <Name>709_SLIM_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\710_SCAF\710_SCAF_bin.vcxproj">
+      <Project>{625F901C-C170-33D7-9A5D-27CB28E407F9}</Project>
+      <Name>710_SCAF_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\711_Subdivision\711_Subdivision_bin.vcxproj">
+      <Project>{F96D33A2-2EE3-37B5-9671-276F9463C787}</Project>
+      <Name>711_Subdivision_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\712_DataSmoothing\712_DataSmoothing_bin.vcxproj">
+      <Project>{D6707D38-FD87-391C-A920-A93D771336A4}</Project>
+      <Name>712_DataSmoothing_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\713_ShapeUp\713_ShapeUp_bin.vcxproj">
+      <Project>{53F78D46-4EDB-3DF1-9A2B-EADEE29B058C}</Project>
+      <Name>713_ShapeUp_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\714_MarchingTets\714_MarchingTets_bin.vcxproj">
+      <Project>{66DC6A93-306E-397E-A8B6-A09A4B9245FD}</Project>
+      <Name>714_MarchingTets_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\715_MeshImplicitFunction\715_MeshImplicitFunction_bin.vcxproj">
+      <Project>{91E80DB3-90C3-3BFC-A534-776889D1701E}</Project>
+      <Name>715_MeshImplicitFunction_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\tutorial\716_HeatGeodesics\716_HeatGeodesics_bin.vcxproj">
+      <Project>{6845AC5C-BCC7-36DA-AC2B-D197667E4E98}</Project>
+      <Name>716_HeatGeodesics_bin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\python\python_shared.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\python\modules\py_vector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\python\py_igl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\python\py_doc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\python\modules\py_igl_opengl_glfw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\python\modules\copyleft\py_igl_comiso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\python\modules\copyleft\py_igl_tetgen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\python\modules\py_igl_embree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\python\modules\py_igl_triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\python\modules\copyleft\py_igl_copyleft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\python\modules\py_igl_png.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Documents\Visual Studio 2019\projects\libigl\python\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{21B6F6BE-5CBE-3551-A509-9D89AB315BF4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

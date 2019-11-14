@@ -52,7 +52,7 @@ bool pre_draw(igl::opengl::glfw::Viewer & viewer)
     RotationList anim_pose(pose.size());
     for(int e = 0;e<pose.size();e++)
     {
-      anim_pose[e] = pose[e].slerp(anim_t,Quaterniond::Identity());
+      anim_pose[e] = pose[e].slerp(sin(anim_t*6.28+e*0.3)/2+0.5,Quaterniond::Identity());
     }
     // Propagate relative rotations via FK to retrieve absolute transformations
     RotationList vQ;
@@ -129,6 +129,7 @@ int main(int argc, char *argv[])
   igl::column_to_quats(Q,pose);
   assert(pose.size() == BE.rows());
 
+  /*
   // List of boundary indices (aka fixed value indices into VV)
   VectorXi b;
   // List of boundary conditions of each weight function
@@ -137,27 +138,27 @@ int main(int argc, char *argv[])
 
   // compute BBW weights matrix
   igl::BBWData bbw_data;
+  
   // only a few iterations for sake of demo
-  bbw_data.active_set_params.max_iter = 8;
+  bbw_data.active_set_params.max_iter = 200;
   bbw_data.verbosity = 2;
   if(!igl::bbw(V,T,b,bc,bbw_data,W))
   {
     return EXIT_FAILURE;
   }
-
-  //MatrixXd Vsurf = V.topLeftCorner(F.maxCoeff()+1,V.cols());
-  //MatrixXd Wsurf;
-  //if(!igl::bone_heat(Vsurf,F,C,VectorXi(),BE,MatrixXi(),Wsurf))
-  //{
-  //  return false;
-  //}
-  //W.setConstant(V.rows(),Wsurf.cols(),1);
-  //W.topLeftCorner(Wsurf.rows(),Wsurf.cols()) = Wsurf = Wsurf = Wsurf = Wsurf;
-
   // Normalize weights to sum to one
   igl::normalize_row_sums(W,W);
   // precompute linear blend skinning matrix
   igl::lbs_matrix(V,W,M);
+
+  igl::serialize<Eigen::MatrixXd>(W, "w.bin");
+  igl::serialize<Eigen::MatrixXd>(M, "m.bin");
+*/
+  igl::deserialize<Eigen::MatrixXd>(W, "w.bin");
+  igl::deserialize<Eigen::MatrixXd>(M, "m.bin");
+
+
+
 
   // Plot the mesh with pseudocolors
   igl::opengl::glfw::Viewer viewer;

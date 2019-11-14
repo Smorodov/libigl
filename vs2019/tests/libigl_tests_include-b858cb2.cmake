@@ -1,0 +1,5 @@
+if(EXISTS "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/tests/libigl_tests_tests-b858cb2.cmake")
+  include("F:/Documents/Visual Studio 2019/projects/libigl/vs2019/tests/libigl_tests_tests-b858cb2.cmake")
+else()
+  add_test(libigl_tests_NOT_BUILT-b858cb2 libigl_tests_NOT_BUILT-b858cb2)
+endif()

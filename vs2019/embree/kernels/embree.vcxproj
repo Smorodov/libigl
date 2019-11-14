@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CC03187D-99C8-348F-A391-111C968FFA28}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>embree</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">embree.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">embree3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">embree.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">embree3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">embree.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">embree3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;EMBREE_LOWEST_ISA;TASKING_INTERNAL;EMBREE_TARGET_SSE2;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;EMBREE_LOWEST_ISA;TASKING_INTERNAL;EMBREE_TARGET_SSE2;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;EMBREE_LOWEST_ISA;TASKING_INTERNAL;EMBREE_TARGET_SSE2;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__SSE__;__SSE2__;EMBREE_LOWEST_ISA;TASKING_INTERNAL;EMBREE_TARGET_SSE2;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;EMBREE_LOWEST_ISA;TASKING_INTERNAL;EMBREE_TARGET_SSE2;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;TBB_USE_DEBUG;__SSE__;__SSE2__;EMBREE_LOWEST_ISA;TASKING_INTERNAL;EMBREE_TARGET_SSE2;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/external/embree/kernels/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/embree/kernels/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\kernels\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/external/embree/kernels/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/embree/kernels/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\kernels\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/Documents/Visual Studio 2019/projects/libigl/external/embree/kernels/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/Documents/Visual Studio 2019/projects/libigl" "-BF:/Documents/Visual Studio 2019/projects/libigl/vs2019" --check-stamp-file "F:/Documents/Visual Studio 2019/projects/libigl/vs2019/embree/kernels/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\kernels\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\embree.rc" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\device.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\stat.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\acceln.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\accelset.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\state.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\rtcore.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\rtcore_builder.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\alloc.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\geometry.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_user_geometry.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_instance.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_triangle_mesh.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_quad_mesh.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_curves.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_line_segments.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_grid_mesh.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_points.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\bezier_curve.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\bspline_curve.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\geometry\primitive4.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\geometry\instance_intersector.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\geometry\curve_intersector_virtual.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\builders\primrefgen.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_statistics.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh4_factory.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh8_factory.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_rotate.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_refit.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_hair.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_hair_mb.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_morton.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_sah.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_sah_spatial.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_sah_mb.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_twolevel.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_intersector1_bvh4.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\common\scene_subdiv_mesh.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\tessellation_cache.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\subdivpatch1base.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\catmullclark_coefficients.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\geometry\grid_soa.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\subdiv\subdivpatch1base_eval.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_builder_subdiv.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_intersector_hybrid4_bvh4.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_intersector_stream_bvh4.cpp" />
+    <ClCompile Include="F:\Documents\Visual Studio 2019\projects\libigl\external\embree\kernels\bvh\bvh_intersector_stream_filters.cpp" />
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_for.obj" />
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_reduce.obj" />
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_prefix_sum.obj" />
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_for_for.obj" />
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_for_for_prefix_sum.obj" />
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_partition.obj" />
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_sort.obj" />
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_set.obj" />
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_map.obj" />
+    <Object Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.dir\$(Configuration)\parallel_filter.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\ZERO_CHECK.vcxproj">
+      <Project>{9AB75CD3-03E8-3A49-ACBF-46BDEEEB0D3B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\algorithms\algorithms.vcxproj">
+      <Project>{E8388D9E-B117-3284-8072-58F6C0DA092D}</Project>
+      <Name>algorithms</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\lexers\lexers.vcxproj">
+      <Project>{64455832-02A3-3800-B7B4-00CCAE635054}</Project>
+      <Name>lexers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\math\math.vcxproj">
+      <Project>{4E2091F1-436A-3B32-B3FD-7B5D9BA39D3C}</Project>
+      <Name>math</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\simd\simd.vcxproj">
+      <Project>{1DDE3A18-8A8B-3341-AACE-2CBA036DA681}</Project>
+      <Name>simd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\sys\sys.vcxproj">
+      <Project>{0EA75765-E8CC-35AB-8341-C666265F2CBC}</Project>
+      <Name>sys</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\Documents\Visual Studio 2019\projects\libigl\vs2019\embree\common\tasking\tasking.vcxproj">
+      <Project>{01D8C24E-0657-38A3-A2C2-A588932A4333}</Project>
+      <Name>tasking</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

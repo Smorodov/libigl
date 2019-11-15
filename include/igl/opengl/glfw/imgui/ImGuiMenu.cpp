@@ -56,8 +56,12 @@ IGL_INLINE void ImGuiMenu::reload_font(int font_size)
   pixel_ratio_ = pixel_ratio();
   ImGuiIO& io = ImGui::GetIO();
   io.Fonts->Clear();
-  io.Fonts->AddFontFromMemoryCompressedTTF(droid_sans_compressed_data,
-    droid_sans_compressed_size, font_size * hidpi_scaling_);
+  if (!io.Fonts->AddFontFromFileTTF("./fonts/a_FuturaOrto.TTF", font_size * hidpi_scaling_, NULL, io.Fonts->GetGlyphRangesCyrillic()))
+  {
+      std::cout << "[File: ImGuiMenu.cpp Method: reload_font ] Can't load: . / fonts / a_FuturaOrto.TTF using embedded font." << std::endl;
+      io.Fonts->AddFontFromMemoryCompressedTTF(droid_sans_compressed_data,
+          droid_sans_compressed_size, font_size * hidpi_scaling_);
+  }
   io.FontGlobalScale = 1.0 / pixel_ratio_;
 }
 

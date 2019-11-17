@@ -1,7 +1,7 @@
-prefix=C:/Program Files (x86)/libigl
+prefix=F:/Documents/Visual Studio 2019/projects/libigl/install
 exec_prefix=${prefix}
-includedir=C:/Program Files (x86)/libigl/include
-libdir=C:/Program Files (x86)/libigl/lib
+includedir=F:/Documents/Visual Studio 2019/projects/libigl/install/include
+libdir=F:/Documents/Visual Studio 2019/projects/libigl/install/lib
 
 Name: GLFW
 Description: A multi-platform library for OpenGL, window and input

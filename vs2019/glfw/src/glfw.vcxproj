@@ -65,7 +65,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -83,10 +83,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_GLFW_USE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -99,7 +99,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -117,10 +117,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLFW_USE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -133,7 +133,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -150,10 +150,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLFW_USE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\src;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>

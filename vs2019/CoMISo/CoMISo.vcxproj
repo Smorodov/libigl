@@ -65,7 +65,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -83,10 +83,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SCL_SECURE_NO_DEPRECATE;INCLUDE_TEMPLATES;_USE_MATH_DEFINES;NOMINMAX;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -99,7 +99,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -117,10 +117,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;INCLUDE_TEMPLATES;_USE_MATH_DEFINES;NOMINMAX;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -133,7 +133,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -150,10 +150,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;INCLUDE_TEMPLATES;_USE_MATH_DEFINES;NOMINMAX;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\..\eigen;F:\Documents\Visual Studio 2019\projects\libigl\external\CoMISo\ext\gmm-4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>

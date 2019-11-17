@@ -71,7 +71,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -91,10 +91,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;IGL_STATIC_LIBRARY;NOMINMAX;TUTORIAL_SHARED_PATH=\"F:/Documents/Visual Studio 2019/projects/libigl/cmake/../external/../tutorial/data\";CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -117,7 +117,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -137,10 +137,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_STATIC_LIBRARY;NOMINMAX;TUTORIAL_SHARED_PATH=\"F:/Documents/Visual Studio 2019/projects/libigl/cmake/../external/../tutorial/data\";CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -163,7 +163,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -182,10 +182,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;IGL_STATIC_LIBRARY;NOMINMAX;TUTORIAL_SHARED_PATH=\"F:/Documents/Visual Studio 2019/projects/libigl/cmake/../external/../tutorial/data\";CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\external;F:\Documents\Visual Studio 2019\projects\libigl\external\glad\include;F:\Documents\Visual Studio 2019\projects\libigl\external\glfw\include;F:\Documents\Visual Studio 2019\projects\libigl\external\stb;F:\Documents\Visual Studio 2019\projects\libigl\vs2019\stb_image;F:\Documents\Visual Studio 2019\projects\libigl\tutorial;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\include;F:\Documents\Visual Studio 2019\projects\libigl\cmake\..\external\eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>

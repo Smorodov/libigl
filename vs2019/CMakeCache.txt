@@ -468,7 +468,7 @@ CMAKE_INSTALL_MANDIR:PATH=
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/libigl
+CMAKE_INSTALL_PREFIX:PATH=F:/Documents/Visual Studio 2019/projects/libigl/install
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -718,7 +718,7 @@ EMBREE_STATIC_RUNTIME:BOOL=ON
 EMBREE_STAT_COUNTERS:BOOL=OFF
 
 // 
-EMBREE_TASKING_SYSTEM:BOOL=OFF
+EMBREE_TASKING_SYSTEM:BOOL=INTERNAL
 
 //Turns benchmarking on.
 EMBREE_TESTING_BENCHMARK:BOOL=OFF
@@ -1068,6 +1068,8 @@ CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
 CMAKE_COMMAND:INTERNAL=C:/Program Files/CMake/bin/cmake.exe
 //Path to cpack program executable.
 CMAKE_CPACK_COMMAND:INTERNAL=C:/Program Files/CMake/bin/cpack.exe
+//ADVANCED property for variable: CMAKE_CTEST_COMMAND
+CMAKE_CTEST_COMMAND-ADVANCED:INTERNAL=1
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=C:/Program Files/CMake/bin/ctest.exe
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
@@ -1168,7 +1170,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=79
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_COMPILER
@@ -1253,7 +1255,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][c ][v()]
 //Details about finding PYTHON
 FIND_PACKAGE_MESSAGE_DETAILS_PYTHON:INTERNAL=C:/Anaconda3/python.exe
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Anaconda3/python.exe][v3.7.3()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Anaconda3/python.exe][v3.7.3(3.4)]
 //Details about finding PythonLibs
 FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[C:/Anaconda3/libs/python37.lib][C:/Anaconda3/include][v3.7.3(3.4)]
 //Details about finding Threads
@@ -1291,7 +1293,7 @@ PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_INCLUDE_DIR
 PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
 PYTHON_INCLUDE_DIRS:INTERNAL=C:/Anaconda3/include
-PYTHON_LIBRARIES:INTERNAL=C:/Anaconda3/libs/Python37.lib
+PYTHON_LIBRARIES:INTERNAL=C:/Anaconda3/libs/python37.lib
 //ADVANCED property for variable: PYTHON_LIBRARY
 PYTHON_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
@@ -1307,5 +1309,5 @@ SLURM_SRUN_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SVNCOMMAND
 SVNCOMMAND-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/libigl
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=F:/Documents/Visual Studio 2019/projects/libigl/install
 

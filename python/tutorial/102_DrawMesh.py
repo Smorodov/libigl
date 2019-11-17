@@ -25,5 +25,5 @@ igl.readOFF(TUTORIAL_SHARED_PATH + "beetle.off", V, F)
 
 # Plot the mesh
 viewer = igl.glfw.Viewer()
-viewer.data().set_mesh(V, F)
+viewer.data(0).set_mesh(V, F)
 viewer.launch()

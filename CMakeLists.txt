@@ -9,6 +9,8 @@ else()
 	set(LIBIGL_TOPLEVEL_PROJECT OFF)
 endif()
 
+include_directories(${LIBIGL_PARENT_DIR}/external)
+
 # Build tests, tutorials and python bindings
 option(LIBIGL_BUILD_TESTS      "Build libigl unit test"        ${LIBIGL_TOPLEVEL_PROJECT})
 option(LIBIGL_BUILD_TUTORIALS  "Build libigl tutorial"         ${LIBIGL_TOPLEVEL_PROJECT})

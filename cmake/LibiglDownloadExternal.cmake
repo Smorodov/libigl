@@ -102,7 +102,7 @@ endfunction()
 ## ImGui
 function(igl_download_imgui)
 	igl_download_project(imgui
-		GIT_REPOSITORY https://github.com/ocornut/imgui.git
+		GIT_REPOSITORY https://github.com/Smorodov/imgui.git
 		GIT_TAG        v1.69
 		${LIBIGL_BRANCH_OPTIONS}
 	)
